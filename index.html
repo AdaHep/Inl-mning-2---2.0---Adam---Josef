@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabant</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/reusable.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/small.css" />
+</head>
+<div class="bgMain">
+  <div class="bgParent">
+    <img class="bg CW" src="./images/trabant-logo.svg" alt="trabant-logo" />
+  </div>
+  <div class="bgParent">
+    <img class="bg CCW" src="./images/IFA-logo.svg" alt="trabant-logo" />
+  </div>
+</div>
+
+<body class="flex vertical justify-center align-center">
+  <header class="flex justify-center align-center vertical color1">
+    <div class="headerMain grid justify-center align-center">
+      <img src="./images/trabant-logo.svg" alt="trabant-logo" class="logo1" />
+      <h1>Nordisk Trabant & IFA-klubb</h1>
+      <div class="headline flex justify-between align-center">
+        <h3>TRABANT</h3>
+        <h3>WARTBURG</h3>
+        <h3>BARKAS</h3>
+      </div>
+      <img src="./images/IFA-logo.svg" alt="IFA-logo" class="logo2" />
+    </div>
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse flex justify-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Start</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galleri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nyheter</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Info
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Att köpa</a></li>
+                <li><a class="dropdown-item" href="#">Import</a></li>
+                <li><a class="dropdown-item" href="#">Teknik</a></li>
+                <li><a class="dropdown-item" href="#">Kontakt</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bigContainer flex red" id="main">
+    <aside class="sidebar color2" id="sidebar">
+      <div id="sideLinks" class="sideLinks flex justify-evenly full-width">
+        <ul class="sidebarLinks">
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Länkar</a></li>
+          <li><a href="#">Gästbok</a></li>
+          <li><a href="#">Träffar</a></li>
+          <li><a href="#">Tips & Tricks</a></li>
+          <li><a href="#">Reservdelar</a></li>
+        </ul>
+        <ul class="sidebarLinks">
+          <li><a href="#">DDR</a></li>
+          <li><a href="#">Dokument</a>
+          <li><a href="#">Klubben</a>
+            <ul class="sidebarLinks2">
+              <li><a href="./medlem/index.html">Bli medlem</a></li>
+              <li><a href="#">Träffar</a></li>
+              <li><a href="#">Ägare</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="searchAndSocial">
+        <form class="form-inline flex">
+          <input class="form-control mr-sm-2" type="search" placeholder="Sök" aria-label="Search">
+        </form>
+        <div class="sidebarContact flex justify-center full-width">
+          <a href="https://www.facebook.com/groups/168744196583738" title="Facebook"
+            class="contact-btn flex justify-center align-center">
+            <i class="bi bi-facebook contact-icon"></i>
+          </a>
+          <a href="mailto:nordiskaifaklubben@trabant.se" title="nordiskaifaklubben@trabant.se"
+            class="contact-btn flex justify-center align-center">
+            <i class="bi bi-envelope-fill contact-icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="btn-exp-tab flex justify-center color2">
+        <i class="bi bi-chevron-compact-down btn-exp-col" onclick="toggleCollapse()"></i>
+      </div>
+    </aside>
+
+    <script>
+      function toggleCollapse() {
+        $('#main').toggleClass('expand');
+      }
+    </script>
+
+<div class="contentContainer flex blue">
+      <div class="cardContainer container flex row">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- CARDS ROW 1 -->
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card  h-100">
+              <div id="carouselControls1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images//card-images/card1img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card1img2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Lackering av motorrum</h4>
+                <p class="card-text">Trabanter har många mil och år bakom sig, så att det kan se risigt ut i motorrummet
+                  på en Trabant är väl knappast en överraskning? Lennart Höglund tog dock tag i saken, blästrade och
+                  lackerade. Nu är motorrummet i nyskick.
+                  <a href="#">Läs mer</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-09-20</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/card-images/card2img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Släpkärra till salu</h4>
+                <p class="card-text">En DDR- släpkärra, Hp 280 till salu. Den är godkänd och anpassad för att dras av
+                  Trabant. <a href="#">Läs mer</a></p>
+                <h6 class="card-subtitle mb-2">Pris: 2000kr + frakt</h6>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-09-16</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active align-center">
+                    <img src="./images/card-images/cardimg-placeholder-ifa-logo.svg" class="d-block w-100 h-100"
+                      alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">IFA-träff i Charlottenberg.</h4>
+                <p class="card-text">Lördagen 11/9 bjuder Bosse Lehresjön in till träff, hemma på gården i
+                  Charlottenberg. Övernattningsmöjlighet finns. Välkomna!
+                  Adress Lehrsjön Solbacka 673 92 Charlottenberg.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-08-25</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARDS ROW 2 -->
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/card-images/card4img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card4img2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card4img3.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls4"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls4"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Nu är Trabanten återbördad till fadershuset.</h4>
+                <p class="card-text">För nästan 20 år sedan ägde Dan Andersson i Bankeryd denna Trabant. Den har
+                  därefter vandrat runt hos olika ägare men är nu tillbaka hos Dan.
+                  Jag hämtade den i dag med bilsläpkärra i Vara och körde hem den till honom. En mycket fin bil.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-08-18</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/card-images/card5img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card5img2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card5img3.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card5img4.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card5img5.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/card-images/card5img6.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls5"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls5"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Östbilsträffen i Omma, Magdeburg 2021.</h4>
+                <p class="card-text">I förra veckan var vi fyra från klubben som besökte Tysklands största östbilsträff
+                  i Magdeburg.
+                  Vi fick beskåda massor av fina bilar och där var också en stor avdelning för reservdelsförsäljning.
+                  Denna träff kan varmt rekommenderas.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-08-15</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/card-images/card6img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/card-images/card6img2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/card-images/card6img3.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/card-images/card6img4.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls6"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls6"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Begagnade delar till Trabant sedan -88 säljes</h4>
+                <p class="card-text">En av våra medlemmar har saker över som han vill sälja <a href="#">Läs
+                    mer</a></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-08-05</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARDS ROW 3 -->
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls7" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/card-images/card7img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/card-images/card7img2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls7"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls7"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">30/4</h4>
+                <p class="card-text">I dag är det 30 år sedan den sista Trabanten lämnade bandet i Zwickau. <br>
+                  10/4 1991 lämnade också den sista Wartburgen bandet i Eisenach.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-04-30</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls8" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/card-images/card8img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/card-images/card8img2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls8"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls8"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Wartburg 1.3 fyrtakt säljes i Göteborg</h4>
+                <p class="card-text">
+                  Bilen är servad med ny kamrem, vattenpump, stift, tändkablar samt olja och filter.
+                  Även nya bromsrör fram och drivaxeldamasker. Förregistreringen och ursprungskontrollen är avklarad.
+                </p>
+                <h6 class="card-subtitle mb-2">Pris: 18 000kr</h6>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-04-20</small>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <div id="carouselControls9" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/card-images/card9img1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Ny medlem!</h4>
+                <p class="card-text">Vi har glädjen att hälsa ytterligare en ny medlem välkommen till klubben.
+                  Denna gång är det Sten Lundgren från Blentarp. Sten har precis köpt en Trabant P 600 från 1962.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2021-03-39</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="flex vertical align-center justify-center">
+    <div class="footerMain flex">
+      <div class="footerContent f-contact flex justify-between">
+        <div class="member flex vertical">
+          <span class="member-title color1">kassör</span>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Kjell Aronsson</span>
+            <span class="member-contact"> (+46)731838367</span>
+          </div>
+        </div>
+        <div class="member flex vertical">
+          <span class="member-title color1">vice ordförande</span>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Ivar Roligheten</span>
+            <span class="member-contact"> +4748216033</span>
+          </div>
+        </div>
+        <div class="member flex vertical">
+          <span class="member-title color1">sekreterare</span>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Kari Helberg Roligheten</span>
+            <span class="member-contact">+4790808914</span>
+          </div>
+        </div>
+        <div class="member flex vertical">
+          <div class="flex justify-between">
+            <span class="member-title color1">ordförande</span>
+            <a href="mailto:nordiskaifaklubben@trabant.se" title="nordiskaifaklubben@trabant.se"
+              class="contact-btn member-mail-btn flex justify-center align-center">
+              <i class="bi bi-envelope-fill contact-icon"></i>
+            </a>
+          </div>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Berndt Andersson</span>
+            <span class="member-contact"> (+46) 0322-41428</span>
+            <span class="member-contact"> 0707607103</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="hymn" src="ddrhymn.mp3" autoplay loop muted></audio>
+    <img src="./images/DDR.svg" alt="DDR-flagga" class="flag" onmouseover="document.getElementById('hymn').muted=false"
+      onmouseleave="document.getElementById('hymn').muted=true">
+  </footer>
+</body>
+
+</html>

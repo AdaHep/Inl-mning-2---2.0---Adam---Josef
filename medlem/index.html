@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabant</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/reusable.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/medlem.css" />
+  <link rel="stylesheet" href="../css/small.css" />
+</head>
+<div class="bgMain">
+  <div class="bgParent">
+    <img class="bg CW" src="../images/trabant-logo.svg" alt="trabant-logo" />
+  </div>
+  <div class="bgParent">
+    <img class="bg CCW" src="../images/IFA-logo.svg" alt="trabant-logo" />
+  </div>
+</div>
+
+<body class="flex vertical justify-center align-center">
+  <header class="flex justify-center align-center vertical color1">
+    <div class="headerMain grid justify-center align-center">
+      <img src="../images/trabant-logo.svg" alt="trabant-logo" class="logo1" />
+      <h1>Nordisk Trabant & IFA-klubb</h1>
+      <div class="headline flex justify-between align-center">
+        <h3>TRABANT</h3>
+        <h3>WARTBURG</h3>
+        <h3>BARKAS</h3>
+      </div>
+      <img src="../images/IFA-logo.svg" alt="IFA-logo" class="logo2" />
+    </div>
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse flex justify-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Start</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galleri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nyheter</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Info
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Att köpa</a></li>
+                <li><a class="dropdown-item" href="#">Import</a></li>
+                <li><a class="dropdown-item" href="#">Teknik</a></li>
+                <li><a class="dropdown-item" href="#">Kontakt</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bigContainer flex" id="main">
+    <aside class="sidebar color2" id="sidebar">
+      <div id="sideLinks" class="sideLinks flex justify-evenly full-width">
+
+        <ul class="sidebarLinks">
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Länkar</a></li>
+          <li><a href="#">Gästbok</a></li>
+          <li><a href="#">Träffar</a></li>
+          <li><a href="#">Tips & Tricks</a></li>
+          <li><a href="#">Reservdelar</a></li>
+        </ul>
+
+        <ul class="sidebarLinks">
+          <li><a href="#">DDR</a></li>
+          <li><a href="#">Dokument</a>
+          <li><a href="#">Klubben</a>
+            <ul class="sidebarLinks2">
+              <li><a href="./medlem/index.html">Bli medlem</a></li>
+              <li><a href="#">Träffar</a></li>
+              <li><a href="#">Ägare</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form-inline flex">
+        <input class="form-control mr-sm-2" type="search" placeholder="Sök" aria-label="Search">
+      </form>
+      <div class="sidebarContact flex justify-center full-width">
+        <a href="mailto:nordiskaifaklubben@trabant.se" title="Facebook"
+          class="contact-btn flex justify-center align-center">
+          <i class="bi bi-facebook contact-icon"></i>
+        </a>
+        <a href="mailto:nordiskaifaklubben@trabant.se" title="nordiskaifaklubben@trabant.se"
+          class="contact-btn flex justify-center align-center">
+          <i class="bi bi-envelope-fill contact-icon"></i>
+        </a>
+      </div>
+      <div class="btn-exp-tab flex justify-center color2">
+        <i class="bi bi-chevron-compact-down btn-exp-col" onclick="toggleCollapse()"></i>
+      </div>
+    </aside>
+
+    <script>
+      function toggleCollapse() {
+        $('#main').toggleClass('expand');
+      }
+    </script>
+    <div class="contentContainer">
+      <form class="signupform">
+        <h1 class="">Bli medlem</h1>
+        <p>Fyll i formuläret och skicka till oss för att ansöka om medlemsakp. <br>
+          När vi mottagit din ansökan skickas ett e-post meddelande med information om hur du betalar medlemsavgiften
+          Har du frågor? Ta kontakt med någon av våra <a href="#">kontaktpersoner</a></p>
+        <div class="row mb-3">
+          <label for="inputfname1" class="col-sm-2 col-form-label">Förnamn</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputfname1">
+          </div>
+          <label for="inputlname1" class="col-sm-2 col-form-label">Efternamn</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputlname1">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputnumber1" class="col-sm-2 col-form-label">Telefonnummer</label>
+          <div class="col-md-2">
+            <select id="inputLand" class="form-select">
+              <option selected>+46</option>
+              <option>+47</option>
+              <option>+358</option>
+              <option>+45</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="inputnumber1">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail1" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail1">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputAdress1" class="col-sm-2 col-form-label">Adress</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputAdress1">
+          </div>
+          <label for="inputLand" class="col-sm-2 col-form-label">Land</label>
+          <div class="col-md-4">
+            <select id="inputLand" class="form-select">
+              <option selected>Sverige</option>
+              <option>Norge</option>
+              <option>Finalnd</option>
+              <option>Danmark</option>
+            </select>
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <label for="inputAdress1" class="col-sm-2 col-form-label">Märke på bil</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Trabant
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Wartburg
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                Barkas
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Ytterligare information</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Exempelvis årsmodell på bil, intressant fakta om bilen eller dig."></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Skicka</button>
+      </form>
+    </div>
+    <div class="medlemInfo flex vertical align-center">
+      <div class="avgift">
+        <table class="medlemsavgifter txt-align-left">
+          <h3>Medlemsavgifter</h3>
+          <tr>
+            <th>Antal</th>
+            <th>Pris</th>
+          </tr>
+          <tr>
+            <td>En person</td>
+            <td>200 kronor</td>
+          </tr>
+          <tr>
+            <td>Familj</td>
+            <td>250 kronor</td>
+          </tr>
+          <tr>
+            <td>Pensionär</td>
+            <td>150 kronor</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </main>
+  <footer class="flex vertical align-center justify-center">
+    <div class="footerMain flex">
+      <div class="footerContent f-contact flex justify-between">
+        <div class="member flex vertical">
+          <span class="member-title color1">kassör</span>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Kjell Aronsson</span>
+            <span class="member-contact"> (+46)731838367</span>
+          </div>
+        </div>
+        <div class="member flex vertical">
+          <span class="member-title color1">vice ordförande</span>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Ivar Roligheten</span>
+            <span class="member-contact"> +4748216033</span>
+          </div>
+        </div>
+        <div class="member flex vertical">
+          <span class="member-title color1">sekreterare</span>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Kari Helberg Roligheten</span>
+            <span class="member-contact">+4790808914</span>
+          </div>
+        </div>
+        <div class="member flex vertical">
+          <div class="flex justify-between">
+            <span class="member-title color1">ordförande</span>
+            <a href="mailto:nordiskaifaklubben@trabant.se" title="nordiskaifaklubben@trabant.se"
+              class="contact-btn member-mail-btn flex justify-center align-center">
+              <i class="bi bi-envelope-fill contact-icon"></i>
+            </a>
+          </div>
+          <div class="member-info flex justify-between color2">
+            <span class="member-name">Berndt Andersson</span>
+            <span class="member-contact"> (+46) 0322-41428</span>
+            <span class="member-contact"> 0707607103</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="hymn" src="../ddrhymn.mp3" autoplay muted></audio>
+    <img src="../images/DDR.svg" alt="DDR-flagga" class="flag" onmouseover="document.getElementById('hymn').muted=false"
+      onmouseleave="document.getElementById('hymn').muted=true">
+  </footer>
+</body>
+
+</html>

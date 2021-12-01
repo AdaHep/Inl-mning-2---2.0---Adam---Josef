@@ -1,0 +1,59 @@
+.signupform {
+    padding: 2rem;
+    /* margin-left: 15rem; */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 45rem;
+    background-color: rgba(128, 128, 128, 0.452);
+    border-radius: 1.5rem;
+  }
+
+  /* CSSen nedan styr storleken på input-rutorna i formuläret */
+
+  .col-md-2 {
+    width: 6.9rem;
+  }
+  .col-md-4 {
+    width: 10rem;
+  }
+  .col-sm-3 {
+    width: 10rem;
+  }
+  .col-sm-10 {
+    width: 20rem;
+  }
+  .mb-3 {
+    margin-top: 1rem;
+  }
+    textarea {
+    resize: none;
+    min-width: 32.25rem;
+  }
+  /* -------------------------------------------------- */
+  
+  .signupform button {
+    margin-left: calc(50% - 47px);
+  }
+  
+/* CSSen nedan styr prislistan  */
+  .medlemInfo {
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .medlemsavgifter {
+    margin-left: 2rem;
+    border-collapse: collapse;
+    width: 15rem;
+  }
+
+  .medlemsavgifter td {
+    text-align: left;    
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+/* -------------------------------------------------- */

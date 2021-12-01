@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSSen nedan styr innehållet i sidonavigationen */
+.sidebar {
+  width: 12.5rem;
+  position: fixed;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border: 1px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sidebarLinks {
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebarLinks li a {
+  font-size: large;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebarLinks li a:hover {
+  text-decoration: underline;
+}
+
+.sidebarLinks2 {
+  list-style-type: none;
+}
+
+.sidebarLinks2 li::before {
+  content: "\2022";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sidebar .contact-btn{
+  margin:1rem;
+}
+/* --------------------------------------------------- */
+
+main {
+  margin-top: 9rem;
+}
+
+.contentContainer {
+  margin-left: 15rem;  
+  margin-bottom: 2rem;
+}
+.card {
+  height: 25rem;
+}
+
+.carousel-item {
+  height: 12rem;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card- h5 {
+  font-size: 20px;
+}
+
+.form-inline {
+  width: 100%;
+  max-width: 25rem;
+  padding-inline: 1rem;
+  margin-top:2rem;
+}
+.form-control{
+  width: 100%;
+}
+
+.form-inline input {
+  background-color: rgb(255, 255, 255);
+  height: 2rem;
+}
+
+.bgMain {
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  position: fixed;
+  opacity: 6%;
+}
+.bgParent {
+  background-color: rgb(255, 255, 255);
+  mix-blend-mode: screen;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  position: fixed;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+}
+.CW {
+  animation: 800s continuousSpinCW linear infinite;
+}
+@keyframes continuousSpinCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.CCW {
+  animation: 1000s continuousSpinCCW linear infinite;
+}
+
+@keyframes continuousSpinCCW {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

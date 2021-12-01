@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="150"
+   height="200"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(-156.53806,-124.40278)"
+     id="layer1">
+    <g
+       id="g3437">
+      <use
+         transform="translate(49.497476,49.497476)"
+         id="use3192"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622"
+         xlink:href="#rect2420" />
+      <rect
+         width="65"
+         height="65"
+         x="237.39886"
+         y="-55.045406"
+         transform="matrix(0.7071068,0.7071068,-0.7071068,0.7071068,0,0)"
+         id="rect2420"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <use
+         transform="translate(0,98.994952)"
+         id="use3196"
+         x="0"
+         y="0"
+         width="744.09448"
+         height="1052.3622"
+         xlink:href="#rect2420" />
+      <rect
+         width="55"
+         height="55"
+         x="312.39886"
+         y="-50.045406"
+         transform="matrix(0.7071068,0.7071068,-0.7071068,0.7071068,0,0)"
+         id="rect3211"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         d="M 229.962,213.05884 L 236.98813,213.05884 L 236.98813,235.74673 L 229.962,235.74673 L 229.962,213.05884 M 242.03332,213.05884 L 259.36652,213.05884 L 259.36652,217.93378 L 249.07494,217.93378 L 249.07494,223.54155 L 257.45417,223.54155 L 257.45417,228.12255 L 249.07494,228.12255 L 249.07494,235.74673 L 242.03332,235.74673 L 242.03332,213.05884 M 274.16169,232.00154 L 266.17604,232.00154 L 265.0772,235.74673 L 257.91179,235.74673 L 266.43912,213.05884 L 274.08429,213.05884 L 282.61161,235.74673 L 275.27596,235.74673 L 274.16169,232.00154 M 272.69147,227.09562 L 270.18431,218.93975 L 267.69266,227.09562 L 272.69147,227.09562"
+         id="text3213"
+         style="font-size:30.8024559px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.6173861;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;font-family:Arial Black;-inkscape-font-specification:'Arial Black,'" />
+    </g>
+  </g>
+</svg>
